@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
 	cors: {
-		origin: "http://localhost:3000",
+		origin: "http://localhost:3001",
 		methods:[ "GET", "POST" ]
 	},
 })
@@ -34,7 +34,8 @@ app.use(
 		resave: false,
 		saveUninitialized: true,
 		store: MongoStore.create({
-			mongoUrl:process.env.MONGO_URL,
+			// mongoUrl:process.env.MONGO_URL,
+			        mongoUrl:'mongodb+srv://Chandan:Chandan@cluster0.w4lcnrk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 		}),
 	})
 );
@@ -72,7 +73,7 @@ io.on("connection", (socket) => {
 })
 
 mongoose
-	.connect(process.env.MONGO_URL)
+	.connect('mongodb+srv://Chandan:Chandan@cluster0.w4lcnrk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 	.then(() => {
 		server.listen(PORT, () => console.log(`Listening on port :` + PORT));
 	})
