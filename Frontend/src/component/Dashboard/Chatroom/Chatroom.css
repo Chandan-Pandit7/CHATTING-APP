@@ -1,0 +1,33 @@
+.chat-room{
+    width: 93%;
+    background-color: #435585;
+    background-image: url("../Chatroom/Screenshot from 2024-07-01 17-13-53.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.blur-box{
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.table-icon{
+    width: 50rem;
+    position: absolute;
+    left: 15rem;
+    top: 17rem;
+}
+.person-icon{
+    width: 30rem;
+    position: absolute;
+    left: 22rem;
+    top: 6rem;
+}
+
+
+/* Color Palette */
+/* 363062
+435585
+818FB4
+F5E8C7 */

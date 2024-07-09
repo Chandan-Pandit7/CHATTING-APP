@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.signup-form{
+    border-radius: 2.5rem;
+}
+.signup-btn{
+    background-color:  #4F46E5;
+}
+.dark-theme{
+    background-color: #222831;
+    height: 100vh;
+}

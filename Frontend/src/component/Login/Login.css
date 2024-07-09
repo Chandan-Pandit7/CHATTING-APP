@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-color{
+    color: white;
+}
+.sign-btn:hover{
+    border-radius: 10rem;
+    transition: ease-in-out 1s;
+}
+.dark-theme{
+    background-color: #222831;
+    height: 100vh;
+}
+#email,
+#password{
+    color: black;
+    padding-left: 5px;
+}
